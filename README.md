@@ -1,12 +1,29 @@
 # Projekt budzika cyfrowego 
-W ramach zajęć Projektowanie systemów cyfrowych zaprojektowałem budzik cyfrowy. Celem było wykonanie schematu elektrycznego, schematu PCB, przylutowanie elementów i stworzenie oprogramowania wszystkich założonych funkcji budzika.
+W ramach zajęć "Projektowanie systemów cyfrowych" zaprojektowałem budzik cyfrowy. Celem było wykonanie schematu elektrycznego, schematu PCB, przylutowanie elementów i stworzenie oprogramowania wszystkich założonych funkcji budzika.
 
 ## Funkcje budzika
 - ustawianie i wyświetlanie aktualnej godziny
 - ustawianie godziny budzika i włączanie/wyłączanie budzika
 - wyświetlanie temperatury otoczenia z dokładnością do 1°C
 - podtrzymanie aktualnej godziny oraz budzików po odłączeniu zasilania
-- dźwięk buzzera w chwili uruchomienia budzika 
+- dźwięk buzzera w chwili uruchomienia budzika
+
+## Moduły i czujniki
+- Mikrokontroler ATMega328P
+- Układ czasu rzeczywistego DS1307+
+- Czujnik temperatury DS18B20
+- Konwerter USB-UART CH340G
+- Wyświetlacz 7 segmentowy TM1637
+
+## Sterowanie
+
+Sterowanie przyciskami:
+
+- KL1:	Zmniejszenie wartości (w trybach edycji), przełączanie TIME/TEMPERATURE
+- BTN2:	Przełączanie edycji godzina/minuta, przełączenie do MENU
+- BTN3:	Zwiększenie wartości (w trybach edycji), włączenie/wyłączenie alarmu
+
+Menu posiada dwie opcje. Przełączając się do MENU opcja 1 to ustawienie alarmu, a 2 to ustawienie wyświetlanego czasu. Opcje zmieniamy KL2 i zatwierdzamy KL3. Po 5 sekundach bezczynności menu zamyka się automatycznie i wraca do trybu TIME. W menu wszystkie 3 diody pulsują.
 
 ## Załączniki
 [Schemat elektryczny](Schematic.pdf)
@@ -14,5 +31,5 @@ W ramach zajęć Projektowanie systemów cyfrowych zaprojektowałem budzik cyfro
 [Dolna warstwa PCB](PCB_BottomLayer.pdf)
 
 ## Efekt końcowy
-- !(PCB_TopPhoto.jpg)
-- !(PCB_BottomPhoto.jpg)
+- ![Warstwa górna](PCB_TopPhoto.jpg)
+- ![Warstwa dolna](PCB_BottomPhoto.jpg)
