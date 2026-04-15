@@ -14,5 +14,5 @@ W ramach zajęć Projektowanie systemów cyfrowych zaprojektowałem budzik cyfro
 [Dolna warstwa PCB](PCB_BottomLayer.pdf)
 
 ## Efekt końcowy
-(PCB_TopPhoto.jpg)
-(PCB_BottomPhoto.jpg)
+!(PCB_TopPhoto.jpg)
+!(PCB_BottomPhoto.jpg)
