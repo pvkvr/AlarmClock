@@ -15,15 +15,6 @@ W ramach zajęć "Projektowanie systemów cyfrowych" zaprojektowałem budzik cyf
 - Konwerter USB-UART CH340G
 - Wyświetlacz 7 segmentowy TM1637
 
-## Sterowanie
-
-Sterowanie przyciskami:
-
-- KL1:	Zmniejszenie wartości (w trybach edycji), przełączanie TIME/TEMPERATURE
-- BTN2:	Przełączanie edycji godzina/minuta, przełączenie do MENU
-- BTN3:	Zwiększenie wartości (w trybach edycji), włączenie/wyłączenie alarmu
-
-Menu posiada dwie opcje. Przełączając się do MENU opcja 1 to ustawienie alarmu, a 2 to ustawienie wyświetlanego czasu. Opcje zmieniamy KL2 i zatwierdzamy KL3. Po 5 sekundach bezczynności menu zamyka się automatycznie i wraca do trybu TIME. W menu wszystkie 3 diody pulsują.
 
 ## Załączniki
 [Schemat elektryczny](Schematic.pdf)
